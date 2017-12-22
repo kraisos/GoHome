@@ -6,28 +6,6 @@ const Mainloop = imports.mainloop;
 const Clutter = imports.gi.Clutter;
 const PanelMenu = imports.ui.panelMenu;
 const PopupMenu   = imports.ui.popupMenu;
-//----------------------------------------------------------------------------
-/*const PopupTeaMenuItem = new Lang.Class({
-    Name: 'PopupTeaMenuItem',
-    Extends: PopupMenu.PopupBaseMenuItem,
-
-    _init: function (sTeaname, nBrewtime, params) {
-        this.parent(params);
-
-        this.tealabel  = new St.Label({ text: sTeaname });
-        this.timelabel = new St.Label({ text: Utils.formatTime(nBrewtime) });
-
-        if (this.actor instanceof St.BoxLayout) {
-            // will be used for gnome-shell 3.10 and possibly above where this.actor is BoxLayout
-            this.actor.add(this.tealabel,  { expand: true });
-            this.actor.add(this.timelabel);
-        } else {
-            this.addActor(this.tealabel,  {expand: true });
-            this.addActor(this.timelabel, {expand: false });
-        }
-    }
-});*/
-//----------------------------------------------------------------------------
 
 const TW_URL = 'http://transport.opendata.ch/v1/connections'
 
